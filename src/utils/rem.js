@@ -5,9 +5,9 @@ function setRem() {
   // 当前页面宽度相对于 750 宽的缩放比例，可根据自己需要修改。
   let scale
   if(document.documentElement.clientWidth < 455){
-    scale = document.documentElement.clientWidth / 750
+    scale = document.documentElement.clientWidth / 900
   }else{
-    scale = 454 / 750
+    scale = 454 / 900
   }
 
 

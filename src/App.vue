@@ -1,6 +1,8 @@
 <template>
   <div id="app" style="max-width: 454px;">
-    <router-view/>
+    <position-box>
+      <router-view/>
+    </position-box>
   </div>
 </template>
 
@@ -9,20 +11,15 @@
   padding: 0;
   margin: 0;
 }
+
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #000a14;
   position: fixed;
   width: 100%;
-  height: 100%;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0) scale3d(1, 1, 1);
-  background: #000a14;
+  background: white;
 }
 // #nav {
 //   padding: 30px;
@@ -35,3 +32,11 @@
 //   }
 // }
 </style>
+<script>
+import PositionBox from "components/layout/position_box.vue";
+export default {
+  components: {
+    PositionBox
+  }
+};
+</script>
